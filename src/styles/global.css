@@ -411,6 +411,75 @@ section {
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .app-container,
+    .hero {
+        height: auto !important;
+        min-height: auto !important;
+    }
+
+    section {
+        padding: 40px 16px !important;
+        margin: 0 !important;
+    }
+
+    .container,
+    .app-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .navbar {
+        height: auto !important;
+        position: relative !important;
+        padding: 20px 0 !important;
+    }
+
+    .navbar.scrolled {
+        height: auto !important;
+        position: fixed !important;
+    }
+
+    .nav-container {
+        flex-direction: column !important;
+        gap: 20px !important;
+        padding: 0 16px !important;
+    }
+
+    .nav-links {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+        width: 100% !important;
+    }
+
+    .nav-link {
+        font-size: 1.1rem !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .flex,
+    .grid,
+    .projects-grid {
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+
+    .section-header {
+        margin-bottom: 24px !important;
+    }
+
     p {
         font-size: 1rem;
         line-height: 1.6;
@@ -418,26 +487,15 @@ section {
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem !important;
     }
 
     h2 {
-        font-size: 2rem;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-    
-    section {
-        padding: 40px 16px !important;
+        font-size: 1.8rem !important;
     }
 
     .hero {
-        min-height: auto !important;
-        height: auto !important;
-        padding-top: 80px !important;
+        padding-top: 100px !important; /* Space for stacked navbar */
         padding-bottom: 40px !important;
     }
 
@@ -450,6 +508,18 @@ section {
     .btn {
         width: 100%;
         justify-content: center;
-        padding: var(--space-4) var(--space-6); /* Tighter size */
+        padding: var(--space-4) var(--space-6);
+    }
+
+    .hero-image {
+        width: 240px !important;
+        height: 240px !important;
+        margin: 0 auto;
+    }
+
+    /* Prevent marquee from causing scroll */
+    .skills-marquee-container {
+        width: 100% !important;
+        overflow: hidden !important;
     }
 }

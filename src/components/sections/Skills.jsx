@@ -119,10 +119,26 @@ const Skills = () => {
                         padding: 40px 16px !important;
                     }
                     .section-header-v2 {
-                        margin-bottom: 32px !important;
+                        margin-bottom: 24px !important;
+                    }
+                    .section-header-v2 h2 {
+                        font-size: 1.5rem !important;
+                        padding: 8px 24px !important;
                     }
                     .skills-marquee-container {
-                        padding: var(--space-6) 0 !important;
+                        padding: var(--space-4) 0 !important;
+                    }
+                    .skill-card-v2 {
+                        width: 110px !important;
+                        height: 110px !important;
+                        margin: 0 8px !important;
+                    }
+                    .skill-card-v2 div {
+                        width: 35px !important;
+                        height: 35px !important;
+                    }
+                    .skill-card-v2 span {
+                        font-size: 0.8rem !important;
                     }
                 }
             ` }} />

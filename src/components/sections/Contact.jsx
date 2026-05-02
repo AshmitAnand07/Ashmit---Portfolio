@@ -103,16 +103,19 @@ const Contact = () => {
                         padding: 40px 16px !important;
                     }
                     .section-header {
-                        margin-bottom: 32px !important;
+                        margin-bottom: 24px !important;
                     }
                     .contact > div {
-                        gap: 24px !important;
+                        gap: 20px !important;
                     }
                     .contact-info-card {
-                        padding: 24px !important;
+                        padding: 16px !important;
                     }
                     .card.reveal {
-                        padding: 24px !important;
+                        padding: 20px !important;
+                    }
+                    form {
+                        gap: 16px !important;
                     }
                 }
             ` }} />

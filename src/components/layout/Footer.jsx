@@ -88,18 +88,22 @@ const Footer = () => {
 
                 @media (max-width: 768px) {
                     .footer-section {
-                        margin-top: 40px;
-                        padding-bottom: 24px;
+                        margin-top: 32px !important;
+                        padding-bottom: 20px !important;
                     }
 
                     .footer-container {
-                        flex-direction: column;
-                        gap: var(--space-4);
-                        text-align: center;
+                        flex-direction: column !important;
+                        gap: 12px !important;
+                        text-align: center !important;
                     }
 
                     .footer-copy {
-                        font-size: 0.85rem;
+                        font-size: 0.8rem !important;
+                    }
+                    
+                    .back-to-top {
+                        font-size: 0.8rem !important;
                     }
                 }
             ` }} />

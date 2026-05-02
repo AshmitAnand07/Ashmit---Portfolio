@@ -26,10 +26,10 @@ const About = () => {
                     }
                     .about-content p:first-child {
                         font-size: 1.1rem !important;
-                        margin-bottom: 24px !important;
+                        margin-bottom: 20px !important;
                     }
                     .section-header {
-                        margin-bottom: 32px !important;
+                        margin-bottom: 24px !important;
                     }
                 }
             ` }} />

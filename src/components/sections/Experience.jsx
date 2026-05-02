@@ -238,15 +238,15 @@ const Experience = () => {
                     }
 
                     .section-header {
-                        margin-bottom: 32px;
+                        margin-bottom: 24px !important;
                     }
 
                     .timeline-container {
-                        padding: 20px 0;
+                        padding: 10px 0 !important;
                     }
 
                     .timeline-line {
-                        left: 20px;
+                        left: 15px !important;
                         transform: none;
                         transform-origin: top left;
                     }
@@ -258,11 +258,11 @@ const Experience = () => {
                     .timeline-item {
                         flex-direction: row !important;
                         justify-content: flex-start;
-                        margin-bottom: 24px;
+                        margin-bottom: 20px !important;
                     }
 
                     .timeline-dot {
-                        left: 20px;
+                        left: 15px !important;
                         transform: translate(-50%, -50%) scale(0);
                     }
 
@@ -271,13 +271,17 @@ const Experience = () => {
                     }
 
                     .timeline-content {
-                        width: calc(100% - 60px);
-                        margin-left: 60px;
+                        width: calc(100% - 40px) !important;
+                        margin-left: 40px !important;
                     }
 
                     .timeline-item.left .timeline-content,
                     .timeline-item.right .timeline-content {
-                        text-align: left;
+                        text-align: left !important;
+                    }
+
+                    .timeline-card {
+                        padding: 16px !important;
                     }
 
                     .timeline-item.left .timeline-card,
@@ -285,9 +289,17 @@ const Experience = () => {
                         background: linear-gradient(to right, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0));
                     }
 
+                    .timeline-title {
+                        font-size: 1.1rem !important;
+                    }
+
+                    .timeline-org {
+                        font-size: 0.9rem !important;
+                    }
+
                     /* All items slide from right on mobile */
                     .timeline-item.left {
-                        transform: translateX(30px);
+                        transform: translateX(20px);
                     }
                     .timeline-item.active {
                         transform: translateX(0);

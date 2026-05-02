@@ -313,24 +313,37 @@ const Projects = () => {
                         padding: 40px 16px !important;
                     }
                     .section-header {
-                        margin-bottom: 32px;
+                        margin-bottom: 24px !important;
+                    }
+                    .section-desc {
+                        margin-bottom: 24px !important;
+                        font-size: 1rem !important;
                     }
                     .projects-grid {
-                        grid-template-columns: 1fr;
-                        gap: 24px;
+                        grid-template-columns: 1fr !important;
+                        gap: 20px !important;
                     }
                     .project-card-inner {
-                        padding: var(--space-6);
+                        padding: 20px !important;
                     }
                     .project-title {
-                        font-size: 1.4rem;
+                        font-size: 1.3rem !important;
+                    }
+                    .project-desc {
+                        font-size: 0.95rem !important;
+                        margin-bottom: 12px !important;
+                    }
+                    .project-points li {
+                        font-size: 0.9rem !important;
+                        margin-bottom: 8px !important;
                     }
                     .project-footer {
-                        flex-direction: column;
-                        gap: 12px;
+                        flex-direction: column !important;
+                        gap: 10px !important;
                     }
                     .btn-project {
-                        width: 100%;
+                        width: 100% !important;
+                        padding: 10px !important;
                     }
                 }
             ` }} />
