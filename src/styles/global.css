@@ -151,6 +151,39 @@ section {
     transition: var(--transition-base);
 }
 
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 1001;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.mobile-menu-btn span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-primary);
+    border-radius: var(--radius-full);
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
 .nav-links {
     display: flex;
     gap: var(--space-10);
@@ -439,33 +472,56 @@ section {
     }
 
     .navbar {
-        height: auto !important;
-        position: relative !important;
-        padding: 20px 0 !important;
-    }
-
-    .navbar.scrolled {
-        height: auto !important;
+        height: 70px !important;
         position: fixed !important;
+        padding: 0 !important;
+        background-color: var(--bg-glass);
+        backdrop-filter: blur(20px) saturate(180%);
+        border-bottom: 1px solid var(--border-glass);
     }
 
     .nav-container {
-        flex-direction: column !important;
-        gap: 20px !important;
-        padding: 0 16px !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        height: 100% !important;
+        padding: 0 20px !important;
+    }
+
+    .mobile-menu-btn {
+        display: flex !important;
     }
 
     .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: var(--bg-primary);
         flex-direction: column !important;
         align-items: center !important;
-        gap: 15px !important;
+        gap: 0 !important;
         width: 100% !important;
+        padding: 0 !important;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        border-bottom: 1px solid transparent;
+        box-shadow: none;
+    }
+
+    .nav-links.active {
+        height: auto;
+        padding: 20px 0 !important;
+        border-bottom: 1px solid var(--border-glass);
+        box-shadow: var(--shadow-xl);
     }
 
     .nav-link {
         font-size: 1.1rem !important;
         width: 100% !important;
         text-align: center !important;
+        padding: 15px 0 !important;
     }
 
     .flex,

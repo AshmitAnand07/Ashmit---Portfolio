@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [activeSection, setActiveSection] = useState("home");
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -38,6 +39,7 @@ const Navbar = () => {
                 top: offsetPosition,
                 behavior: "smooth"
             });
+            setIsMobileMenuOpen(false); // Close mobile menu on link click
         }
     };
 
@@ -47,7 +49,18 @@ const Navbar = () => {
                 <div className="logo" onClick={() => scrollToSection("home")} style={{ cursor: "pointer" }}>
                     Portfolio.
                 </div>
-                <ul className="nav-links">
+                
+                <button 
+                    className={`mobile-menu-btn ${isMobileMenuOpen ? "active" : ""}`}
+                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    aria-label="Toggle navigation menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}>
                     {["home", "about", "skills", "projects", "contact"].map((item) => (
                         <li key={item}>
                             <button
