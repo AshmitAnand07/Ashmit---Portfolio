@@ -1,62 +1,54 @@
 :root {
-  /* Neon Glass Palette */
-  --bg-body: #1a0b2e;
-  /* Deep purple/black base */
-  --bg-gradient: radial-gradient(circle at 10% 20%, #2d1b69 0%, #1a0b2e 90%);
-
-  --bg-card: rgba(255, 255, 255, 0.03);
-  /* Ultra subtle glass */
-  --bg-card-hover: rgba(255, 255, 255, 0.08);
-  --bg-glass-panel: rgba(255, 255, 255, 0.05);
-  /* For main containers */
-
-  /* Text Colors */
-  /* Text Colors */
-  --text-main: #ffffff;
-  --text-muted: #ffffff;
-  /* Was #b3b3b3 - User request: Bright White */
-  --text-light: #f0f0f0;
-  /* Was #808080 - User request: Bright White */
-
-  /* Accents */
-  --primary-color: #7000ff;
-  /* Electric Violet */
-  --primary-gradient: linear-gradient(135deg, #7000ff 0%, #ff00de 100%);
-  /* Purple to Pink Neon */
-  --accent-color: #00f0ff;
-  /* Cyan Neon */
-  --glow-color: rgba(112, 0, 255, 0.5);
-
-  /* Borders */
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --glass-border: 1px solid rgba(255, 255, 255, 0.15);
+  /* Colors */
+  --bg-primary: #0a0a0c;
+  --bg-secondary: #121215;
+  --bg-glass: rgba(18, 18, 21, 0.7);
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  
+  --accent: #3b82f6; /* Blue */
+  --accent-glow: rgba(59, 130, 246, 0.5);
+  --accent-secondary: #8b5cf6; /* Violet */
+  
+  --border-glass: rgba(255, 255, 255, 0.1);
+  --border-focus: rgba(59, 130, 246, 0.5);
 
   /* Typography */
-  --font-main: 'Outfit', 'Inter', system-ui, sans-serif;
-  --font-heading: 'Outfit', 'Inter', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* Spacing & Sizing */
-  --text-base: 1.125rem;
-  --text-lg: 1.5rem;
-  --text-xl: 2.5rem;
-  --text-2xl: 4rem;
+  /* Spacing (8px scale) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
 
-  --spacing-sm: 16px;
-  --spacing-md: 32px;
-  --spacing-lg: 64px;
-  --spacing-xl: 120px;
-
-  /* UI Elements */
-  --radius-sm: 12px;
-  --radius-md: 20px;
-  --radius-lg: 30px;
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
   --radius-full: 9999px;
 
-  /* Effects */
-  --shadow-card: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
-  --backdrop-blur: blur(20px);
-  --neon-glow: 0 0 20px rgba(112, 0, 255, 0.4);
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 
-  --transition-smooth: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -1,83 +1,41 @@
 /* Utility Classes */
 
-/* Glass Components */
-.glass-panel {
-    background: var(--bg-glass-panel);
-    backdrop-filter: blur(20px);
-    border: var(--glass-border);
-    border-radius: var(--radius-lg);
-}
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
 
-.glass-card {
-    background: var(--bg-card);
-    backdrop-filter: blur(10px);
-    border: var(--glass-border);
-    border-radius: var(--radius-md);
-    transition: var(--transition-smooth);
-}
-
-.glass-card:hover {
-    background: var(--bg-card-hover);
-    border-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-5px);
-}
-
-/* Text Gradients */
-.text-gradient-primary {
-    background: var(--primary-gradient);
+.text-center { text-align: center; }
+.text-accent { color: var(--accent); }
+.text-gradient {
+    background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
-.text-gradient-silver {
-    background: linear-gradient(to right, #fff, #a0a0a0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+
+.mt-4 { margin-top: var(--space-4); }
+.mt-8 { margin-top: var(--space-8); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-8 { margin-bottom: var(--space-8); }
+
+.glass {
+    background: var(--bg-glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-glass);
 }
 
-/* Layout Helpers */
-.flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.flex-between {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.grid-responsive {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
-}
-
-/* Spacing Helpers */
-.mb-sm {
-    margin-bottom: var(--spacing-sm);
-}
-
-.mb-md {
-    margin-bottom: var(--spacing-md);
-}
-
-.mb-lg {
-    margin-bottom: var(--spacing-lg);
-}
-
-.mb-xl {
-    margin-bottom: var(--spacing-xl);
-}
-
-/* Typography Helpers */
-.font-heading {
-    font-family: var(--font-heading);
-}
-
-.font-mono {
-    font-family: var(--font-mono);
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
