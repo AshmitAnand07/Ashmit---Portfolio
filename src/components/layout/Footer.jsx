@@ -87,9 +87,14 @@ const Footer = () => {
                 }
 
                 @media (max-width: 768px) {
+                    .footer-section {
+                        margin-top: 40px;
+                        padding-bottom: 24px;
+                    }
+
                     .footer-container {
                         flex-direction: column;
-                        gap: var(--space-6);
+                        gap: var(--space-4);
                         text-align: center;
                     }
 

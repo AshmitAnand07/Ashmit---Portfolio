@@ -233,6 +233,18 @@ const Experience = () => {
 
                 /* --- Mobile Responsiveness --- */
                 @media (max-width: 768px) {
+                    .education-section {
+                        padding: 40px 16px !important;
+                    }
+
+                    .section-header {
+                        margin-bottom: 32px;
+                    }
+
+                    .timeline-container {
+                        padding: 20px 0;
+                    }
+
                     .timeline-line {
                         left: 20px;
                         transform: none;
@@ -246,7 +258,7 @@ const Experience = () => {
                     .timeline-item {
                         flex-direction: row !important;
                         justify-content: flex-start;
-                        margin-bottom: var(--space-12);
+                        margin-bottom: 24px;
                     }
 
                     .timeline-dot {

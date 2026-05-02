@@ -114,6 +114,17 @@ const Skills = () => {
                     border-color: var(--accent);
                     box-shadow: 0 10px 30px -10px var(--accent-glow);
                 }
+                @media (max-width: 768px) {
+                    .skills {
+                        padding: 40px 16px !important;
+                    }
+                    .section-header-v2 {
+                        margin-bottom: 32px !important;
+                    }
+                    .skills-marquee-container {
+                        padding: var(--space-6) 0 !important;
+                    }
+                }
             ` }} />
         </section>
     );

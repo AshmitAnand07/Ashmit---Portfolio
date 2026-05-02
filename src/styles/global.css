@@ -412,26 +412,44 @@ section {
 
 @media (max-width: 768px) {
     p {
-        line-height: 1.9; /* Improved readability on mobile */
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: var(--space-6);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 
     .projects-grid {
         grid-template-columns: 1fr;
+        gap: 24px;
     }
     
     section {
-        padding: var(--space-20) var(--space-6);
+        padding: 40px 16px !important;
+    }
+
+    .hero {
+        min-height: auto !important;
+        height: auto !important;
+        padding-top: 80px !important;
+        padding-bottom: 40px !important;
     }
 
     .hero-actions {
         flex-direction: column;
         width: 100%;
-        gap: var(--space-4);
+        gap: 16px;
     }
 
     .btn {
         width: 100%;
         justify-content: center;
-        padding: var(--space-5) var(--space-8); /* Thumb-friendly size */
+        padding: var(--space-4) var(--space-6); /* Tighter size */
     }
 }

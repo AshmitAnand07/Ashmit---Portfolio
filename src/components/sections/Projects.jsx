@@ -309,9 +309,15 @@ const Projects = () => {
                 }
 
                 @media (max-width: 768px) {
+                    .projects-section {
+                        padding: 40px 16px !important;
+                    }
+                    .section-header {
+                        margin-bottom: 32px;
+                    }
                     .projects-grid {
                         grid-template-columns: 1fr;
-                        gap: var(--space-6);
+                        gap: 24px;
                     }
                     .project-card-inner {
                         padding: var(--space-6);
@@ -321,6 +327,7 @@ const Projects = () => {
                     }
                     .project-footer {
                         flex-direction: column;
+                        gap: 12px;
                     }
                     .btn-project {
                         width: 100%;
