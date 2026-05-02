@@ -7,16 +7,16 @@ const Hero = () => {
     return (
         <section className="hero" id="home">
             <div className="hero-content reveal active">
-                <p className="hero-subtitle">Welcome to my space</p>
+                <span className="hero-subtitle">Welcome to my space</span>
                 <h1 className="hero-title">
                     Hi, I'm <span className="text-gradient">Ashmit Anand</span>
                 </h1>
-                <h2 style={{ fontSize: '1.5rem', color: 'var(--text-secondary)', marginBottom: 'var(--space-6)' }}>
+                <h2 className="text-gradient" style={{ fontSize: '1.75rem', marginBottom: 'var(--space-8)', opacity: 0.9 }}>
                     Aspiring AI Engineer | MERN Stack Developer
                 </h2>
                 <p className="hero-description">
                     I build exceptional digital experiences with modern technologies. 
-                    Focused on creating intuitive, performant, and beautiful web applications 
+                    Focused on creating intuitive, performant, and beautiful applications 
                     that solve real-world problems.
                 </p>
                 <div className="hero-actions">
@@ -27,7 +27,7 @@ const Hero = () => {
                         <Button className="btn-secondary">Download CV</Button>
                     </a>
                 </div>
-                <div style={{ marginTop: 'var(--space-8)' }}>
+                <div style={{ marginTop: 'var(--space-10)' }}>
                     <SocialIcons />
                 </div>
             </div>

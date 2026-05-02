@@ -3,10 +3,10 @@ import { skills } from "../../data/skills";
 const SkillCard = ({ title, skills }) => {
     return (
         <div className="card skill-card">
-            <h3 style={{ fontSize: '1.25rem', marginBottom: 'var(--space-4)', color: 'var(--text-primary)' }}>{title}</h3>
-            <div className="skill-list" style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--space-2)' }}>
+            <h3 style={{ fontSize: '1.25rem', marginBottom: 'var(--space-6)', color: 'var(--text-primary)' }}>{title}</h3>
+            <div className="skill-list" style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--space-3)' }}>
                 {skills.map(skill => (
-                    <span key={skill} className="tag" style={{ background: 'rgba(59, 130, 246, 0.1)', color: 'var(--accent)', border: '1px solid rgba(59, 130, 246, 0.2)' }}>
+                    <span key={skill} className="tag">
                         {skill}
                     </span>
                 ))}
@@ -20,10 +20,10 @@ const Skills = () => {
         <section className="skills" id="skills">
             <div className="section-header reveal">
                 <h2 className="section-title">Technical Expertise</h2>
-                <p style={{ color: 'var(--text-secondary)' }}>A comprehensive list of technologies and tools I work with.</p>
+                <p>A comprehensive list of technologies and tools I work with.</p>
             </div>
             
-            <div className="skills-grid reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'var(--space-6)' }}>
+            <div className="skills-grid reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 'var(--space-8)' }}>
                 {skills.map((item) => (
                     <SkillCard
                         key={item.category}
