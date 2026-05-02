@@ -5,35 +5,35 @@ import ResumeConfig from "../../config/ResumeConfig";
 
 const Hero = () => {
     return (
-        <section className="hero" id="home">
-            <div className="hero-content reveal active">
-                <span className="hero-subtitle">Welcome to my space</span>
-                <h1 className="hero-title">
-                    Hi, I'm <span className="text-gradient">Ashmit Anand</span>
+        <section className="hero">
+            <div className="hero-content reveal">
+                <span className="hero-subtitle">Software Developer</span>
+                <h1>
+                    Hello, <br />
+                    I am <span className="text-gradient">Ashmit Anand</span>
                 </h1>
-                <h2 className="text-gradient" style={{ fontSize: '1.75rem', marginBottom: 'var(--space-8)', opacity: 0.9 }}>
-                    Aspiring AI Engineer | MERN Stack Developer
-                </h2>
                 <p className="hero-description">
-                    I build exceptional digital experiences with modern technologies. 
-                    Focused on creating intuitive, performant, and beautiful applications 
-                    that solve real-world problems.
+                    I build exceptional and accessible digital experiences for the web. 
+                    Focused on creating <span className="text-gradient-secondary">impactful solutions</span> with modern technologies.
                 </p>
+                
                 <div className="hero-actions">
-                    <a href="#projects">
-                        <Button className="btn-primary">View Projects</Button>
+                    <a href="#contact" className="btn btn-primary">
+                        Contact Me
                     </a>
-                    <a href={ResumeConfig.resumeLink} target="_blank" rel="noopener noreferrer">
-                        <Button className="btn-secondary">Download CV</Button>
+                    <a href="/resume.pdf" download="Ashmit_Anand_Resume.pdf" className="btn btn-secondary">
+                        Download CV
                     </a>
-                </div>
-                <div style={{ marginTop: 'var(--space-10)' }}>
-                    <SocialIcons />
                 </div>
             </div>
-            <div className="hero-image-container reveal active">
+
+            <div className="hero-image-container reveal">
                 <div className="hero-glow"></div>
-                <img src={profileImg} alt="Ashmit Anand" className="hero-image" />
+                <img 
+                    src={profileImg} 
+                    alt="Ashmit Anand" 
+                    className="hero-image"
+                />
             </div>
         </section>
     );
