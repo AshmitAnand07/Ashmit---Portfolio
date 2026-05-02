@@ -20,8 +20,10 @@ body {
     background-image: 
         radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.05) 0%, transparent 50%),
         linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 100% 100%, 30px 30px, 30px 30px;
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3gt%3Cfilter id='noiseFilter'%3gt%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3gt%3C/filter%3gt%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3gt%3C/svg%3gt");
+    background-size: 100% 100%, 30px 30px, 30px 30px, 200px 200px;
+    background-repeat: repeat;
     color: var(--text-primary);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
@@ -104,7 +106,7 @@ p {
 }
 
 section {
-    padding: var(--space-32) var(--space-8);
+    padding: var(--space-16) var(--space-8);
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
@@ -219,7 +221,7 @@ section {
 
 /* Hero Section Enhancement */
 .hero {
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -403,9 +405,75 @@ section {
     border-radius: var(--radius-full);
 }
 
-/* Scrollbar */
+/* Section Header V2 - UI/UX Pro Max Pattern */
+.section-header-v2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: var(--space-20);
+}
+
+.section-header-v2 .header-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-glass), transparent);
+    z-index: 0;
+}
+
+.section-header-v2 .header-pill {
+    background: var(--bg-tertiary);
+    padding: 12px 48px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--accent-violet);
+    z-index: 1;
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.3);
+    transition: var(--transition-base);
+}
+
+.section-header-v2 .header-pill h2 {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+.section-header-v2 .header-pill:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 40px rgba(124, 58, 237, 0.5);
+    border-color: var(--accent);
+}
+
+/* Card Refinements */
+.card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-slow);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent);
+    box-shadow: var(--shadow-xl), 0 10px 40px -10px var(--accent-glow);
+}
+
+/* Form Polish */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 4px var(--accent-glow);
+}
+
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -415,6 +483,7 @@ section {
 ::-webkit-scrollbar-thumb {
     background: var(--bg-tertiary);
     border-radius: var(--radius-full);
+    border: 2px solid var(--bg-primary);
 }
 
 ::-webkit-scrollbar-thumb:hover {

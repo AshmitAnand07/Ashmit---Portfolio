@@ -93,7 +93,7 @@ const Projects = () => {
 
             <style dangerouslySetInnerHTML={{ __html: `
                 .projects-section {
-                    padding: var(--space-32) var(--space-6);
+                    padding: var(--space-16) var(--space-6);
                     background: radial-gradient(circle at 10% 90%, rgba(22, 242, 179, 0.03) 0%, transparent 40%),
                                 radial-gradient(circle at 90% 10%, rgba(124, 58, 237, 0.03) 0%, transparent 40%);
                 }

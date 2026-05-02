@@ -2,31 +2,38 @@ import { skills } from "../../data/skills";
 
 const SkillCard = ({ name, icon }) => {
     return (
-        <div className="skill-card-v2" style={{ 
-            width: '140px',
-            height: '140px',
-            background: 'var(--bg-secondary)',
-            border: '1px solid var(--border-glass)',
-            borderRadius: 'var(--radius-xl)',
+        <div className="card skill-card-v2" style={{ 
+            width: '150px',
+            height: '160px',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
             gap: 'var(--space-4)',
-            transition: 'all var(--transition-base)',
-            cursor: 'default',
             margin: '0 var(--space-4)',
-            boxShadow: 'var(--shadow-md)'
+            padding: 'var(--space-4)'
         }}>
-            <div style={{ width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 'var(--space-2)' }}>
                 <img 
                     src={icon} 
                     alt={name} 
-                    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                    style={{ 
+                        width: '100%', 
+                        height: '100%', 
+                        objectFit: 'contain',
+                        filter: name.toLowerCase() === 'github' ? 'brightness(0) invert(1)' : 'none'
+                    }}
                     onError={(e) => e.target.src = `https://ui-avatars.com/api/?name=${name}&background=16f2b3&color=fff`}
                 />
             </div>
-            <span style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text-secondary)' }}>{name}</span>
+            <span style={{ 
+                fontSize: '0.85rem', 
+                fontWeight: '600', 
+                color: 'var(--text-secondary)',
+                textAlign: 'center',
+                lineHeight: '1.4',
+                width: '100%'
+            }}>{name}</span>
         </div>
     );
 };
@@ -60,36 +67,16 @@ const Skills = () => {
     return (
         <section className="skills" id="skills">
             {/* Header with Skills Label */}
-            <div className="section-header-v2 reveal" style={{ 
-                display: 'flex', 
-                alignItems: 'center', 
-                justifyContent: 'center', 
-                position: 'relative',
-                marginBottom: 'var(--space-20)'
-            }}>
-                <div style={{ 
-                    position: 'absolute', 
-                    left: '0', 
-                    right: '0', 
-                    height: '1px', 
-                    background: 'linear-gradient(90deg, transparent, var(--border-glass), transparent)',
-                    zIndex: 0
-                }}></div>
-                <div style={{ 
-                    background: '#1b1b3a', 
-                    padding: '12px 48px', 
-                    borderRadius: 'var(--radius-lg)', 
-                    border: '1px solid var(--accent-violet)',
-                    zIndex: 1,
-                    boxShadow: '0 0 30px rgba(124, 58, 237, 0.4)'
-                }}>
-                    <h2 style={{ fontSize: '2rem', color: 'white', margin: 0, letterSpacing: '0.05em' }}>Skills</h2>
+            <div className="section-header-v2 reveal">
+                <div className="header-line"></div>
+                <div className="header-pill">
+                    <h2>Skills</h2>
                 </div>
             </div>
             
             <div className="skills-marquee-container reveal" style={{ 
                 overflow: 'hidden', 
-                padding: 'var(--space-12) 0',
+                padding: 'var(--space-8) 0',
                 maskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)',
                 WebkitMaskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)'
             }}>
@@ -110,35 +97,27 @@ const Skills = () => {
                     100% { transform: translateX(-33.33%); }
                 }
                 .skill-card-v2:hover {
-                    transform: translateY(-8px) scale(1.05);
-                    border-color: var(--accent);
-                    box-shadow: 0 10px 30px -10px var(--accent-glow);
+                    transform: translateY(-8px) scale(1.05) !important;
                 }
                 @media (max-width: 768px) {
                     .skills {
                         padding: 40px 16px !important;
                     }
-                    .section-header-v2 {
-                        margin-bottom: 24px !important;
-                    }
-                    .section-header-v2 h2 {
-                        font-size: 1.5rem !important;
-                        padding: 8px 24px !important;
-                    }
                     .skills-marquee-container {
                         padding: var(--space-4) 0 !important;
                     }
                     .skill-card-v2 {
-                        width: 110px !important;
-                        height: 110px !important;
+                        width: 120px !important;
+                        height: 130px !important;
                         margin: 0 8px !important;
                     }
                     .skill-card-v2 div {
-                        width: 35px !important;
-                        height: 35px !important;
+                        width: 40px !important;
+                        height: 40px !important;
+                        margin-bottom: 4px !important;
                     }
                     .skill-card-v2 span {
-                        font-size: 0.8rem !important;
+                        font-size: 0.75rem !important;
                     }
                 }
             ` }} />

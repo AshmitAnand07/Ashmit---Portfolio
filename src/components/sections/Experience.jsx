@@ -50,9 +50,11 @@ const Experience = () => {
 
     return (
         <section className="education-section" id="experience" ref={sectionRef}>
-            <div className="section-header reveal">
-                <span className="section-subtitle">Journey</span>
-                <h2 className="section-title">Education & Experience</h2>
+            <div className="section-header-v2 reveal">
+                <div className="header-line"></div>
+                <div className="header-pill">
+                    <h2>Education & Experience</h2>
+                </div>
             </div>
 
             <div className="timeline-container">
@@ -66,7 +68,7 @@ const Experience = () => {
 
             <style dangerouslySetInnerHTML={{ __html: `
                 .education-section {
-                    padding: var(--space-32) var(--space-6);
+                    padding: var(--space-16) var(--space-6);
                     max-width: 1000px;
                     margin: 0 auto;
                     position: relative;

@@ -1,10 +1,10 @@
 :root {
   /* Colors - Inspiration: anubhav-chaturvedi.netlify.app */
-  --bg-primary: #0d1224;
-  --bg-secondary: #11152c;
-  --bg-tertiary: #1b203e;
-  --bg-glass: rgba(13, 18, 36, 0.7);
-  --bg-glass-hover: rgba(27, 32, 62, 0.9);
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  --bg-glass: rgba(15, 23, 42, 0.7);
+  --bg-glass-hover: rgba(30, 41, 59, 0.9);
   
   /* Accents */
   --accent: #16f2b3; /* Vibrant Teal */
@@ -27,7 +27,7 @@
   --border-focus: var(--accent);
 
   /* Typography */
-  --font-sans: 'Inter', 'Poppins', system-ui, sans-serif;
+  --font-sans: 'DM Sans', 'Inter', 'Poppins', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
   /* Spacing */

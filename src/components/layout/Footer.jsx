@@ -26,7 +26,7 @@ const Footer = () => {
             <style dangerouslySetInnerHTML={{ __html: `
                 .footer-section {
                     position: relative;
-                    margin-top: var(--space-32);
+                    margin-top: var(--space-16);
                     padding-bottom: var(--space-12);
                 }
 
