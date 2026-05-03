@@ -55,8 +55,8 @@ const Contact = () => {
                         <div className="card contact-info-card" style={{ padding: 'var(--space-8)' }}>
                             <p style={{ fontSize: '0.8rem', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: 'var(--space-1)', fontWeight: '700', letterSpacing: '0.05em' }}>Socials</p>
                             <div style={{ display: 'flex', gap: 'var(--space-6)', marginTop: 'var(--space-2)' }}>
-                                <a href="https://github.com/AshmitAnand07" target="_blank" rel="noreferrer" className="text-gradient hover:brightness-125 transition-all" style={{ fontWeight: '700' }}>GitHub</a>
-                                <a href="https://linkedin.com/in/ashmitanand" target="_blank" rel="noreferrer" className="text-gradient hover:brightness-125 transition-all" style={{ fontWeight: '700' }}>LinkedIn</a>
+                                <a href="https://github.com/AshmitAnand07" target="_blank" rel="noreferrer" className="hover:brightness-125 transition-all" style={{ fontWeight: '700', color: 'white' }}>GitHub</a>
+                                <a href="https://www.linkedin.com/in/ashmit-anand-704898256" target="_blank" rel="noreferrer" className="hover:brightness-125 transition-all" style={{ fontWeight: '700', color: 'white' }}>LinkedIn</a>
                             </div>
                         </div>
                     </div>
