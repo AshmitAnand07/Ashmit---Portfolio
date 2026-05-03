@@ -13,8 +13,8 @@ const Hero = () => {
                     I am <span className="text-gradient">Ashmit Anand</span>
                 </h1>
                 <p className="hero-description">
-                    I build exceptional and accessible digital experiences for the web. 
-                    Focused on creating <span className="text-gradient-secondary">impactful solutions</span> with modern technologies.
+                    Architecting scalable web applications and <span className="text-gradient-secondary">intelligent digital systems</span>. 
+                    Dedicated to building high-performance, impact-driven solutions for the modern web.
                 </p>
                 
                 <div className="hero-actions">
