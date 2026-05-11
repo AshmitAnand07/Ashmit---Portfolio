@@ -49,11 +49,11 @@ const Experience = () => {
     }, []);
 
     return (
-        <section className="education-section" id="experience" ref={sectionRef}>
+        <section className="education-section" id="education" ref={sectionRef}>
             <div className="section-header-v2 reveal">
                 <div className="header-line"></div>
                 <div className="header-pill">
-                    <h2>Education & Experience</h2>
+                    <h2>Education</h2>
                 </div>
             </div>
 
