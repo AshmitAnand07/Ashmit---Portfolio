@@ -1,17 +1,17 @@
 export const projects = [
     {
-        title: "AI YouTube Thumbnail Style Cloner",
-        subtitle: "Multi-Agent Thumbnail Generation System",
-        category: "AI / Automation",
-        description: "Orchestrated an end-to-end AI pipeline to scrape YouTube thumbnails and extract visual style patterns.",
+        title: "Deep-AE",
+        subtitle: "Listening to Structural Integrity with AI",
+        category: "AI / Machine Learning",
+        description: "AI-powered Structural Health Monitoring platform that detects structural anomalies using Acoustic Emission analysis and CNNs.",
         points: [
-            "Built a modular multi-agent workflow for style analysis, prompt generation, and image synthesis.",
-            "Created an interactive Streamlit UI for real-time thumbnail generation with A/B variations.",
-            "Integrated error handling and fallback mechanisms for reliable execution across API failures."
+            "Converts structural audio into AI-readable spectrograms using an advanced audio preprocessing pipeline.",
+            "Uses CNN-based deep learning models for accurate crack vs. healthy classification and real-time prediction.",
+            "Includes an enterprise-style interactive Streamlit dashboard for waveform visualization and analytics."
         ],
-        techStack: ["Python", "Streamlit", "OpenAI API", "Google Gemini API", "YouTube Data API"],
-        githubLink: "https://github.com/AshmitAnand07/Youtube-Thumbnail-Generator",
-        demoLink: "#",
+        techStack: ["Python", "PyTorch", "Librosa", "NumPy", "Streamlit", "Torchvision"],
+        githubLink: "https://github.com/AshmitAnand07/Deep-AE.git",
+        demoLink: "https://deepae.streamlit.app/",
         featured: true
     },
     {
@@ -30,19 +30,18 @@ export const projects = [
         featured: true
     },
     {
-        title: "NeuraMed",
-        subtitle: "Smart Medicine Management & Redistribution",
-        category: "MERN Stack",
-        description: "Full-stack platform to track medicines, monitor expiry, and send reminders (reducing waste by ~40%).",
+        title: "AI YouTube Thumbnail Style Cloner",
+        subtitle: "Multi-Agent Thumbnail Generation System",
+        category: "AI / Automation",
+        description: "Orchestrated an end-to-end AI pipeline to scrape YouTube thumbnails and extract visual style patterns.",
         points: [
-            "Developed a redistribution system for donating unused medicines to NGOs and individuals.",
-            "Designed a responsive UI with real-time duplicate-purchase detection.",
-            "Implemented scalable backend with MongoDB schemas and REST APIs."
+            "Built a modular multi-agent workflow for style analysis, prompt generation, and image synthesis.",
+            "Created an interactive Streamlit UI for real-time thumbnail generation with A/B variations.",
+            "Integrated error handling and fallback mechanisms for reliable execution across API failures."
         ],
-        techStack: ["MongoDB", "Express.js", "React.js", "Node.js", "REST APIs"],
-        githubLink: "https://github.com/AshmitAnand07/NeuraMed",
-        demoLink: "https://medicare-one-delta.vercel.app/",
+        techStack: ["Python", "Streamlit", "OpenAI API", "Google Gemini API", "YouTube Data API"],
+        githubLink: "https://github.com/AshmitAnand07/Youtube-Thumbnail-Generator",
+        demoLink: "#",
         featured: true
     }
 ];
-
